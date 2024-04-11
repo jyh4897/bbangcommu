@@ -1,0 +1,192 @@
+.Footer {
+     height: 172px;
+     position: relative;
+     transform:translateY(0%);
+}
+
+.FooterContent {
+    display: flex   ; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.FooterContent > *:not(:last-child) {
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftContent img{
+    width: 100px;
+    transform: translateX(-9%);
+}
+
+
+
+.FooterLayer1 {
+    border-bottom: #ddd solid 1px;
+    background-color: rgba(250,235,215,0.4);
+    height: 3rem;
+    text-align: center;
+    padding-top: 15px;
+    white-space: nowrap;
+}
+
+.LayerWrap {
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    margin-right: 20%;
+    justify-content: space-between;
+}
+
+.FooterLink {
+    text-underline-offset: 2px;
+    width: 40%;
+    text-align: center;
+    list-style: none;
+    display: flex;
+}
+
+.FooterLink > li {
+    border-left: 2px solid; 
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.FooterLink a:not(:nth-child(2)) {
+    color: grey;
+}
+
+.FooterLink li:nth-child(2) a {
+    /* 스타일 지정 */
+    color: rgb(69, 69, 226);
+}
+.LayerDivWrap {
+    width: 15%;
+    margin-right:10%;
+}
+
+.FooterLinkDivWrap {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+}
+
+.FooterLinkDivWrap > li {
+border-left: 2px solid; 
+padding-left: 5%;
+padding-right: 3%;
+}
+
+.FooterLinkDivWrap > li > a {
+    text-underline-offset: 2px;
+    color: grey;
+}
+
+.FooterLayer3 {
+    border-bottom: #ddd solid 1px;
+    height: 34px;
+    text-align: center;
+    padding-top: 15px;
+    white-space: nowrap;
+}
+
+.FooterContent > address {
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-size: 12px;
+    margin-top : 10px;
+    line-height: 1.25rem;
+}
+
+.leftContent {
+    height:3rem;
+    line-height: 1.27rem;
+    font-weight:700;
+}
+
+.leftContent > p {
+    font-size: 12px;
+}
+
+.labelList {
+    position: relative;
+    left: -250px;
+}
+
+.labelList .label {
+    margin-left:15%;
+    z-index: 999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 3rem;
+    border: 3px solid #717171;
+    line-height: 2.5rem;
+    display: block;
+    position: relative; 
+    padding: 0 1rem 0rem 1rem;
+    border-radius: 5rem;    
+    letter-spacing: -0.05rem;
+    transition: all 0.2s;
+}
+
+.list > ul {
+    width: 172.28px;
+    margin-left: 12%;
+    position: absolute;
+    top: 5%;
+}
+
+.labelList .list {
+    margin-left:15%;
+    visibility: hidden;
+    overflow: hidden;
+    width: 172.28px;
+    opacity: 1;
+    position: absolute;
+    left: auto;
+    bottom: 100%;
+    padding: 4rem 0;
+    border-radius: 2rem;
+    border: 1px solid #b3b3b3;
+    background-color: #b3b3b3;
+    transition: all 0.2s;
+    z-index: 9999;
+}
+
+.labelList .list a {
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    margin-right: 25%;
+    line-height: 1.4rem;
+    margin-bottom: 5%;
+    text-align: center;
+    opacity: 0.9;
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    border: 1px dotted;
+    border-radius: 3rem;
+}
+
+.labelList .list a:hover,
+.labelList .list a:focus {
+    color: #535353;
+}
+
+.labelList .label.active::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.labelList .list.active {
+    transition: all 0.2s;
+    visibility: visible;
+    overflow: visible;
+    width: 172.28px;
+    height: 140px;
+    bottom: calc(100% + 1rem);
+}

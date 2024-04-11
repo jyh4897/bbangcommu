@@ -1,0 +1,100 @@
+/* 글 제목 */
+.commu-write__title-box {
+  width:100%;
+  margin: 100px auto 0;
+  text-align: start;
+  font-size: 16px;
+}
+.commu-write__title {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  font-size: 25px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.commu-write__title::placeholder{
+  color:rgba(0,0,0,0.2);
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.commu-write__title:focus {
+  outline: none;
+}
+.commu-write__title:focus::placeholder{
+  color:transparent;
+}
+
+/* 글 본문 */
+.commu-write__content {
+  width: 100%;
+  height: 400px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  margin: 50px auto 0px;
+}
+/* 퀼 에디터 툴바 기능 설정 */
+.ql-editor strong{
+  font-weight:bold;
+}
+.ql-editor em {
+  font-style: italic;
+}
+.ql-editor u {
+  text-decoration: underline;
+}
+.ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+.ql-editor s {
+  text-decoration: line-through;
+}
+.ql-editor ol, .ql-editor ul {
+  padding-left: 0;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+.ql-editor ul li {
+  list-style:none;
+}
+.ql-editor li:before {
+  content: counter(list-0, decimal) '. ';
+}
+.ql-editor .ql-indent-1 {
+  padding-left: 40px;
+}
+.ql-editor .ql-indent-2 {
+  padding-left: 80px;
+}
+.ql-editor .ql-indent-3 {
+  padding-left: 120px;
+}
+.ql-editor .ql-indent-4 {
+  padding-left: 160px;
+}
+.ql-editor .ql-indent-5 {
+  padding-left: 200px;
+}
+.ql-editor .ql-align-justify {
+  text-align: justify;
+}
+.ql-editor .ql-align-center {
+  text-align: center;
+}
+.ql-editor .ql-align-right {
+  text-align: right;
+}
+
+/* 등록/취소 버튼 */
+.commu-write__button {
+  text-align: right;
+  margin-top: 50px;
+}
+.commu-write__button--submit {
+  margin-right: 5px;
+}

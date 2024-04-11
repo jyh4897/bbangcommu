@@ -1,0 +1,25 @@
+.commu-pagination {
+  list-style: none;
+  display:flex;
+  margin: 60px auto;
+  width: 30%;
+}
+
+.commu-pagination__button-box {
+  margin: 0 auto;
+}
+
+.commu-pagination button {
+  padding: 8px 10px;
+  margin-right: 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  text-decoration: none;
+  color: #333;
+  background-color: white;
+  font-size: 16px;
+}
+
+.commu-pagination button.selected {
+  background-color: RGB(221, 243, 230);
+  color: RGB(64, 162, 67);
+}

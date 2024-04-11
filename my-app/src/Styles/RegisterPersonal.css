@@ -1,0 +1,109 @@
+/* 페이지 div */
+.regi-page {
+  width: 600px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 100px auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 회원가입 폼 div */
+.regi-form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+/* 상단 회원가입 문구 */
+.regi-form h2 {
+  text-align: center;
+  margin-bottom: 55px;
+  font-size: 24px;
+}
+
+.regi-form .regi-form-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.regi-form label {
+font-weight: bold;
+}
+
+/* 회원가입 폼 인풋 */
+.regi-form input[type="text"],
+.regi-form input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  width: 60%;
+}
+
+/* 회원가입 폼 인풋 포커스 */
+.regi-form input[type="text"]:focus,
+.regi-form input[type="password"]:focus {
+  outline: none;
+  border-bottom: 1px solid #58c45f;
+}
+
+.regi-form .regi-form-addr-box input {
+  width: 100%;
+}
+
+/* 중복 확인 버튼 */
+.regi-form .regi-dupl__button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #b4b4b4;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.regi-form .regi-dupl__button {
+  margin: 0;
+  width: 35%;
+}
+
+.regi-form .regi-dupl__button:hover,
+.regi-form .regi-addr__button:hover {
+  background-color: #4caf50;
+}
+
+.regi-form .regi-dupl__button:focus,
+.regi-form .regi-addr__button:focus {
+  outline: none;
+}
+
+/* 주소 선택, 가입 완료 버튼 */
+.regi-form .regi-addr__button,
+.regi-form .regi-complete__button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.regi-form .regi-complete__button:focus {
+  outline: none;
+}

@@ -1,0 +1,8 @@
+.commu-reply-comment__view {
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    left: 65px;
+    top: 153px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}

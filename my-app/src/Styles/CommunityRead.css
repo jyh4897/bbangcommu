@@ -1,0 +1,188 @@
+.commu-post-detail__title-box {
+  margin: 150px 0 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.commu-post-detail__title {
+  text-align: start;
+  line-height: 1.5em;
+  color: rgb(83, 212, 92);
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.commu-post-detail__info-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  margin: 50px 0 10px 0;
+}
+
+.commu-post-detail__username-and-date-box {
+  display: flex;
+  align-items: center;
+}
+
+.commu-post-detail__username {
+  margin-right: 10px;
+}
+
+.commu-post-detail__datetime {
+  font-size: 14px;
+  vertical-align: text-bottom;
+}
+
+.commu-post-detail__view-and-like-box,
+.commu-post-detail__view-box,
+.commu-post-detail__like-box {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.commu-post-detail__view {
+  margin: 0 10px 0 5px;
+}
+
+.commu-post-detail__like {
+  margin-left: 3px;
+}
+
+.commu-post-detail__icon-box {
+  text-align: right;
+  font-size: 20px;
+  position: relative;
+}
+
+.commu-post-detail__icon {
+  cursor: pointer;
+  
+}
+
+.commu-post-detail__menu {
+  position:absolute;
+  right:-70px;
+  top:20px;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.commu-post-detail__menu--edit,
+.commu-post-detail__menu--delete {
+  border:none;
+  background-color: white;
+  color:rgba(0,0,0,0.5);
+  height:40px;
+}
+
+.commu-post-detail__menu--edit {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.commu-post-detail__content-box {
+  margin-bottom: 70px;
+}
+.commu-post-detail__content-box strong {
+  font-weight: bold;
+}
+.commu-post-detail__content-box em {
+  font-style: italic;
+}
+.commu-post-detail__content-box u {
+  text-decoration: underline;
+}
+.commu-post-detail__content-box blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+.commu-post-detail__content-box s {
+  text-decoration: line-through;
+}
+.commu-post-detail__content-box ol, 
+.commu-post-detail__content-box ul {
+  padding-left: 1.5em;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.commu-post-detail__content-box ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-0;
+}
+.commu-post-detail__content-box li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+.commu-post-detail__content-box ol li::before {
+  content: counter(list-0, decimal) '. ';
+}
+.commu-post-detail__content-box ul li {
+  list-style:disc;
+}
+.commu-post-detail__content-box .ql-indent-1 {
+  padding-left: 40px;
+}
+.commu-post-detail__content-box .ql-indent-2 {
+  padding-left: 80px;
+}
+.commu-post-detail__content-box .ql-indent-3 {
+  padding-left: 120px;
+}
+.commu-post-detail__content-box .ql-indent-4 {
+  padding-left: 160px;
+}
+.commu-post-detail__content-box .ql-indent-5 {
+  padding-left: 200px;
+}
+
+.commu-post-detail__content-box .ql-align-justify {
+  text-align: justify;
+}
+.commu-post-detail__content-box .ql-align-center {
+  text-align: center;
+}
+.commu-post-detail__content-box .ql-align-right {
+  text-align: right;
+}
+
+
+.commu-post-detail__content-box p {
+  line-height: 1.5em;
+}
+
+.commu-post-detail__content-box img {
+  max-width: 800px;
+}
+
+.commu-post-detail__like-box {
+  width:min-content;
+  margin: 50px auto;
+  padding: 10px 20px;
+  font-size: 25px;
+  background-color: rgb(221, 243, 230);
+  color: rgb(83, 212, 92);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  cursor:pointer;
+}
+.commu-post-detail__button--go-list-box {
+  height: 70px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.commu-post-detail__button--go-list {
+  width: 60px;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgb(83, 212, 92);
+  font-size:12px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  color:white;
+}

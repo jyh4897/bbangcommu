@@ -1,0 +1,48 @@
+.commu-comment-box {
+  position: relative;
+}
+
+/* 댓글 수 */
+.commu-comment__count-box {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.commu-comment__count {
+  margin-left: 5px;
+}
+
+/* 답글이 아닌 댓글 작성 폼 */
+.commu-comment__form--origin {
+  margin-top: 30px;
+}
+
+/* 댓글+답글 작성 폼 */
+.commu-comment__form {
+  display: flex;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.commu-comment__content {
+  width: 83%;
+  resize: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  outline: none;
+  margin-right: 10px;
+}
+.commu-comment__content::placeholder {
+  color: rgba(0,0,0,0.3);
+}
+.commu-comment__button--submit {
+  width: 15%;
+  height: 50px;
+  background-color: rgb(83, 212, 92);
+  font-size:12px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color:white;
+}

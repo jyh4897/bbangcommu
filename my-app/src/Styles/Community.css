@@ -1,0 +1,203 @@
+.community-page {
+  position:relative;
+}
+
+/* 카테고리 */
+.commu-category-box {
+  width:100%;
+  margin: 30px auto;
+  text-align: center;
+}
+.commu-category__button {
+  width:33%;
+  border:none;
+  background-color: transparent;
+  padding: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(40, 40, 40);
+}
+.commu-category__button--selected {
+  border-bottom: 3px solid rgb(83, 212, 92);
+}
+
+/* 검색창, 글쓰기 버튼 */
+.commu-search-and-go-write-box {
+  display: flex;
+  align-items: center;
+  margin: 100px 0 15px;
+}
+.commu-search-box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.commu-search-box__button {
+  width: 65px;
+  height: 40px;
+}
+.commu-search-box--except-button {
+  display: flex;
+  height: 40px;
+  margin-right: 10px;
+  border: 2px solid #c4c4c4;
+  border-radius: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.commu-search-box__option, .commu-search-box__input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.commu-go-write-box {
+  width:100%;
+  text-align: right;
+}
+.commu-go-write-box__button {
+  width: 64px;
+  height: 40px;
+  border-radius: 0;
+}
+
+/* 게시글 목록 */
+.commu-post-list-box{
+  width: 100%;
+  margin: 10px 0;
+  list-style: none;
+  padding-left: 0;
+}
+.commu-post-list {
+  width: 100%;
+  height: 180px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  font-size: 14px;
+}
+.commu-post-list:first-child {
+  border-top: 1px solid rgba(0,0,0,0.5);
+}
+.commu-post-list__thumbnail {
+  width: 160px;
+  height: 160px;
+  margin: 0 20px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+.commu-post-list__info-box {
+  width:100%;
+  height: 160px;
+}
+.commu-post-list__title-and-content-and-datetime {
+  display: flex;
+  width: 100%;
+  height:70%;
+}
+.commu-post-list__title-and-content {
+  width: 80%;
+  padding: 20px 0 0 0;
+}
+.commu-post-list__title-and-content > a {
+  text-decoration: none;
+}
+
+/* 게시글 제목 */
+.commu-post-list__title {
+  max-width: 90%;
+  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: 500;
+  color: rgb(83, 212, 92);
+  overflow: hidden;
+  display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.commu-post-list__title:hover {
+  font-weight: bold;
+}
+
+/* 게시글 내용 */
+.commu-post-list__content {
+  max-width: 95%;
+  line-height: 1.5em;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  overflow: hidden;
+  display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.commu-post-list__content a {
+  text-decoration: none;
+  color:black;
+}
+.commu-post-list__content span {
+  color:black !important;
+  background-color: white !important;
+}
+.commu-post-list__content li:not(.ql-direction-rtl)::marker {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+.commu-post-list__content ol {
+  list-style: decimal;
+  padding-left: 1.5em;
+}
+.commu-post-list__content ul {
+  list-style: disc;
+}
+
+/* 날짜 */
+.commu-post-list__datetime {
+  width: 20%;
+  text-align: center;
+  padding-top: 55px;
+}
+.commu-post-list__datetime--date,
+.commu-post-list__datetime--time {
+  line-height: 1.2em;
+}
+
+/* 유저 정보와 조회, 좋아요, 댓글 포함 박스 */
+.commu-post-list__detail {
+  width:100%;
+  height:30%;
+  display: flex;
+  align-items: end;
+  font-size: 13px;
+}
+
+/* 유저 정보 */
+.commu_post-list__detail--userinfo {
+  width: 72%;
+  display: flex;
+  align-items:end;
+}
+
+/* 조회, 댓글, 좋아요 */
+.commu_post-list__detail--attention {
+  display: flex;
+  justify-content: space-between;
+  width:28%;
+}
+.commu-post-list__icon {
+  font-size:15px;
+  margin-right: 5px;
+}
+.commu-post-list__view,
+.commu-post-list__like,
+.commu-post-list__comment {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  margin-left:10px;
+}
+

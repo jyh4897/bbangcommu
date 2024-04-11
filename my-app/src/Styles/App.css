@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+
+/* 모든 스타일 리셋
+	 http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.App {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* 레이아웃 */
+.wrap {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.inner {
+  width: 1000px;
+  margin: 60px auto 100px;
+}
+
+/* 헤더 */
+.com-header {
+  width: 1500px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background-image:
+   url('../../public/background_img/earth7.png'),
+   url('../../public/background_img/back3.jpg');
+  background-size: 200px 200px, 1502px 300px;
+  background-repeat:no-repeat;
+  background-position: 81% 80%, 20% 170%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  position: relative;
+  transform: translateX(-16%);
+}
+.com-header__title {
+  color: rgb(112, 112, 112);
+  font-size: 50px;
+  position: absolute;
+  top: 120px;
+  left: 240px;
+}
+.com-header__title--detail {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgb(112, 112, 112);
+}
+
+/* 버튼 */
+.button {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgb(83, 212, 92);
+  font-size:14px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  color:white;
+}
+button:hover {
+  cursor:pointer
+}

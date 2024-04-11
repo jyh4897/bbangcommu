@@ -1,0 +1,235 @@
+/* 페이지 div */
+.news-page {
+  margin: 0 auto;
+}
+
+/* 헤더 */
+.news-header {
+  width: 1500px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-image: url("../../public/background_img/back3.jpg");
+  background-size: 1502px;
+  background-repeat: no-repeat;
+  background-position: 20% 210%;
+  position: relative;
+  transform: translateX(-16%);
+  z-index: 2;
+  border-radius: 40px;
+}
+
+.news-page a:link {
+  text-decoration-line: none;
+}
+
+.news-page a:visited {
+  color: rgb(83, 212, 92);
+}
+
+/* 검색, 정렬 있는 줄 */
+.news-search-and-sort-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  margin: 50px auto 0;
+}
+
+/* 검색 div */
+.news-search-box {
+  margin-bottom: 30px;
+}
+
+/* 검색 인풋 */
+.news-search-box input {
+  border: 2px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 8px;
+  padding-left: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  height: 40px;
+}
+
+.news-search-box input:hover,
+.news-search-box input:focus {
+  border: 2px solid rgb(83, 212, 92);
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: 3px solid #ffffff;
+}
+
+/* 검색 버튼 */
+.news-search-box button {
+  width: 60px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgb(83, 212, 92);
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+}
+
+/* 정렬기능 */
+.news-sort-box {
+  width: 130px;
+  height: 40px;
+  border: 2px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 6px 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.news-sort-box:hover {
+  border: 2px solid rgb(83, 212, 92);
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: 3px solid #ffffff;
+}
+
+/* 뉴스 목록 */
+.news-list {
+  width: 100%;
+  padding: 0;
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.news-list-box {
+  margin: 0 auto;
+  height: 130px;
+}
+
+.news-list-box li {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* 뉴스 썸네일 */
+.news-list__img-box {
+  width: 140px;
+  height: 110px;
+  margin-right: 20px;
+}
+.news-list-box li img {
+  cursor: pointer;
+  width: 140px;
+  height: 110px;
+  box-sizing: border-box;
+}
+
+/* 뉴스 제목 */
+.news-list-box li a {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin-right: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  text-align: left;
+  text-decoration-line: none;
+}
+
+/* 방문 전 제목 */
+.news-list-box li a:link {
+  color: rgb(0, 0, 0);
+  text-decoration-line: none;
+}
+
+/* 제목 hover */
+.news-list-box li a:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* 방문 후 제목 */
+.news-list-box li a:visited {
+  color: rgb(190, 190, 190);
+}
+
+/* 뉴스 조회수, 날짜 */
+.news-list-box li p {
+  width: 180px;
+  margin: 0px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.news-list__views {
+  margin-left: 5px;
+}
+
+/* 뉴스 좋아요 버튼 */
+.news-list-box li button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  height: 30px;
+}
+
+.news-like__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.news-list__datetime {
+  width: 20%;
+}
+
+/* 페이지네이션 */
+.pagination {
+  margin: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pagination li a {
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination li.active a {
+  background-color: RGB(221, 243, 230);
+  color: RGB(64, 162, 67);
+}

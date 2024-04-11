@@ -1,0 +1,83 @@
+.commu-single-comment-box {
+  width:100%;
+}
+.commu-single-comment {
+  padding: 20px 0 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  width: 100%;
+}
+
+/* 댓글 수정 시 */
+.commu-single-comment__form {
+  display: flex;
+}
+.commu-single-comment__name-box--editing {
+  font-size: 14px;
+  width: 10%;
+  text-align: center;
+}
+.commu-single-comment__content--editing {
+  width: 65%;
+  resize: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  outline: none;
+  margin-right: 10px;
+}
+.commu-single-comment__button-box--editing {
+  width: 25%;
+}
+.commu-single-comment__button--editing {
+  width: 46%;
+  height: 50px;
+  background-color: rgb(83, 212, 92);
+  font-size:12px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color:white;
+}
+.commu-single-comment__button--editing:first-child {
+  margin-right: 5px;
+}
+
+/* 댓글 출력 */
+.commu-single-comment-box--basic {
+  display: flex;
+}
+.commu-single-comment__detail-box {
+  width: 80%;
+  margin-right: 30px;
+}
+.commu-single-comment__name-date-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.commu-single-comment__date-box {
+  line-height: 20px;
+}
+.commu-single-comment__content-box {
+  margin-bottom: 10px;
+}
+.commu-single-comment__reply-button--write {
+  font-size: 14px;
+  color:rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.commu-single-comment__button--edit-and-delete-box {
+  display: flex;
+  align-items:center;
+}
+.commu-single-comment__button--edit-and-delete-box > button {
+  font-size:14px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
+.commu-single-comment__reply-comment-box--write {
+  padding-bottom: 20px;
+}
